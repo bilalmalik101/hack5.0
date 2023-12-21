@@ -71,6 +71,17 @@ else{
     printf("failed = degree in radian returned%1f,and to expect 1058.0\n",returnedvalue);
     failed++;
 }
+//test case for lorentztimedilation function to check work
+double t=1.0, percentC=0.25;
+returnedvalue=round(lorentzTimeDilation(t,percentC));
+if(returnedvalue==1.00){
+    printf("passed\n");
+    passed++;
+}
+else{
+    printf("failed lorentz return %1f, to expect 1.00\n",returnedvalue );
+    failed++;
+}
 
 
 
