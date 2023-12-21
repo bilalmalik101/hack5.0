@@ -49,6 +49,28 @@ else{
 //test case to check result of getairdistance function and assigning variables and copy values in airdistancefunction
 double originLatitude=40.0,originLongitude=-85.0,destinationLatitude=42.0,destinationLongitude=-96.0;
 printf("getAirdistance(%1f,%1f,%1f,%1f)" ,originLatitude,originLongitude,destinationLatitude,destinationLatitude);
+returnedvalue=round(getAirDistance(originLatitude,originLongitude,destinationLatitude,destinationLongitude));
+if(returnedvalue==949.0){
+    printf("passed\n");
+    passed++;
+}
+else{
+    printf("failed degree returned %1f,degree expected 949.0\n",returnedvalue);
+    failed++;
+
+}
+//changing values only
+originLatitude=-40.0,originLongitude=85.0,destinationLatitude=-45.0,destinationLongitude=96.0;
+printf("getAirDistance(%1f,%1f,%1f,%1f)",originLatitude,originLongitude,destinationLatitude,destinationLongitude);
+returnedvalue=round(getAirDistance(originLatitude,originLongitude,destinationLatitude,destinationLongitude));
+if(returnedvalue==1058.0){
+    printf("passed\n");
+    passed++;
+}
+else{
+    printf("failed = degree in radian returned%1f,and to expect 1058.0\n",returnedvalue);
+    failed++;
+}
 
 
 
