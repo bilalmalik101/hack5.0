@@ -3,10 +3,10 @@
 //function to return distance value
 double getAirDistance(double originLatitude,double originLongitude, double destinationLatitude,double destinationLongitude){
     // using degreetoRadian function                 
-    originLatitude = degreeToRadians(originLatitude);
-    originLongitude = degreeToRadians(originLongitude);
-    destinationLatitude = degreeToRadians(destinationLatitude);
-    destinationLongitude = degreeToRadians(destinationLongitude);
+    originLatitude =degreeToRadians(originLatitude);
+    originLongitude =degreeToRadians(originLongitude);
+    destinationLatitude =degreeToRadians(destinationLatitude);
+    destinationLongitude =degreeToRadians(destinationLongitude);
     double delta = destinationLongitude - originLongitude;
     float const R = 6371;
     // using spherical law
